@@ -1,8 +1,10 @@
 import 'dart:convert';
 
 void main(List<String> arguments) {
-  final original = 'rmJOO8k4ONy13+MmIA==';
-  printAllCombinations(original);
+  final original = 'rmJ008k4ONy13+MmIA==';
+  // Replace all zeros with O because that's how the program works
+  final workable = original.replaceAll('0', 'O');
+  printAllCombinations(workable);
 }
 
 void printAllCombinations(String inputString) {
