@@ -60,7 +60,7 @@ void iterateFromIndex(
       final currentB64 = compile(pieces, choiceIndexes);
       print('---');
       print(currentB64);
-      print(utf8.decode(base64Decode(currentB64), allowInvalid: true));
+      print(utf8.decode(base64Decode(currentB64), allowMalformed: true));
     }
     // If we have other choices, try them
     if (choiceIndexes[index] + 1 < pieces[index].length) {
