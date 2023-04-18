@@ -50,7 +50,7 @@ void main(List<String> arguments) {
 
 void iterateFromIndex(
     List<List<String>> pieces, int index, List<int> choiceIndexes) {
-  for (var choice in pieces[index]) {
+  for (var _ in pieces[index]) {
     // If we are not on the last index
     if (index != choiceIndexes.length - 1) {
       // Do all iterations under our piece
