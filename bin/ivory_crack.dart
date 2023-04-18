@@ -5,7 +5,7 @@ import 'package:convert/convert.dart';
 void main(List<String> arguments) {
   final pieces = [
     ['V7'],
-    ['rm', 'nm'],
+    ['rm'],
     ['JO', 'Jo', 'J0'],
     ['O8', '08', 'OB', '0B'],
     ['k4'],
