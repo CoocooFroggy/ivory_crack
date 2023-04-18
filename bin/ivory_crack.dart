@@ -5,7 +5,7 @@ void main(List<String> arguments) {
     ['V7'],
     ['rm', 'nm'],
     ['JO', 'Jo', 'J0'],
-    ['O8', '08'],
+    ['O8', '08', 'OB', '0B'],
     ['k4'],
     ['ON', '0N', 'oN'],
     ['y1'],
@@ -60,7 +60,7 @@ void iterateFromIndex(
       final currentB64 = compile(pieces, choiceIndexes);
       print('---');
       print(currentB64);
-      print(utf8.decode(base64Decode(currentB64), allowMalformed: true));
+      print(utf8.decode(base64Decode(currentB64), allowInvalid: true));
     }
     // If we have other choices, try them
     if (choiceIndexes[index] + 1 < pieces[index].length) {
