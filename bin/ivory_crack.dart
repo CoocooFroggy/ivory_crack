@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:convert/convert.dart';
+
 void main(List<String> arguments) {
   final pieces = [
     ['V7'],
@@ -60,6 +62,7 @@ void iterateFromIndex(
       final currentB64 = compile(pieces, choiceIndexes);
       print('---');
       print(currentB64);
+      print(hex.encode(base64Decode(currentB64)));
       print(utf8.decode(base64Decode(currentB64), allowMalformed: true));
     }
     // If we have other choices, try them
